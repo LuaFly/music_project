@@ -8,8 +8,12 @@
 
   <title>Document</title>
   <style>
+  body{
+    background: #EAFBFE;
+  }
     .box {
-      background: #EAFBFE;
+      margin-top:3rem;
+      background: #FCFFFF;
       overflow-y: auto;
       overflow-x: hidden;
       border-radius:10px;
@@ -21,9 +25,11 @@
   </style>
 </head>
 <body>
-<div class="row d-flex justify-content-center">
-  <div class="light-blue box col-10 ">
-    @include('components/menu')
+<div class="col-12">
+  <div class="row d-flex justify-content-center">
+    <div class="light-blue box col-11 ">
+      @include('components/menu')
+    </div>
   </div>
 </div>
 </body>
