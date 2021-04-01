@@ -25,12 +25,17 @@
   </style>
 </head>
 <body>
-<div class="col-12">
-  <div class="row d-flex justify-content-center">
-    <div class="light-blue box col-11 ">
-      @include('components/menu')
+  <div class="box">
+    <div class="d-flex justify-content-end">
+      <div class="light-blue col-11 ">
+        @include('components/menu')
+      </div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="col-5">
+        @include('components/carrousel')
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
