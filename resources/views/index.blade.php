@@ -33,8 +33,10 @@
       </div>
     </div>
     <div class="d-flex justify-content-end">
-      <div class="col-5">
-        @include('components/carrousel')
+      <div class="row">
+        <div class="col-12">
+          @include('components/carrousel')
+        </div>
       </div>
     </div>
   </div>
