@@ -3,7 +3,9 @@
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 .mySlides img {
-  max-height: 500px;
+  height: 60vh;
+  max-width:500px;
+  object-fit: fill;
 }
 img {vertical-align: middle;}
 
@@ -52,18 +54,18 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 6s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 6s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 1} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 1} 
   to {opacity: 1}
 }
 
@@ -73,22 +75,42 @@ img {vertical-align: middle;}
 }
 </style>
 <div class="row">
-  <h1 class="col-4">Teste</h1>
-  <div class="col-8 slideshow-container">
+  <div class="col-12 slideshow-container">
     <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="img/alexander-shatov-niUkImZcSP8-unsplash.jpg" style="width:100%">
-        <div class="text">TEste</div>
+      <div class="row">
+        <div class="col-5 ">
+        <h1 class="title">Teste</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, officia tenetur cumque iure dolor sit autem eum facere itaque qui porro nobis. Itaque repellat accusantium maxime. Neque eaque sapiente similique! </p>
+        </div>
+        <div class="col-7 text-right">
+          <img src="img/alexander-shatov-niUkImZcSP8-unsplash.jpg" style="width:100%">
+          <div class="text">Photo by <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+      </div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
+      <div class="row">
+      <div class="col-5 ">
+        <h1 class="title">Teste 2</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, officia tenetur cumque iure dolor sit autem eum facere itaque qui porro nobis. Itaque repellat accusantium maxime. Neque eaque sapiente similique! </p>
+      </div>
+        <div class="col-7 text-right">
         <img src="img/eric-nopanen-8e0EHPUx3Mo-unsplash.jpg" style="width:100%">
-        <div class="text">Teste</div>
+        <div class="text">Photo by <a href="https://unsplash.com/@rexcuando?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric Nopanen</a> on <a href="https://unsplash.com/s/photos/music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+      </div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/clark-tibbs-oqStl2L5oxI-unsplash.jpg" style="width:100%">
-        <div class="text">Teste</div>
+      <div class="row">
+        <div class="col-5 ">
+          <h1 class="title">Teste 3</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, officia tenetur cumque iure dolor sit autem eum facere itaque qui porro nobis. Itaque repellat accusantium maxime. Neque eaque sapiente similique! </p>
+        </div>
+        <div class="col-7 text-right">
+          <img src="img/clark-tibbs-oqStl2L5oxI-unsplash.jpg" style="width:100%">
+          <div class="text">Photo by <a href="https://unsplash.com/@clarktibbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clark Tibbs</a> on <a href="https://unsplash.com/s/photos/new-things?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+      </div>
       </div>
       <br>
       <div style="text-align:center">
@@ -117,6 +139,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
 </script>
