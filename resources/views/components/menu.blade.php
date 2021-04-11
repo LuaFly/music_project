@@ -52,10 +52,10 @@
 						</li>
 					</ul>
 				</nav>
-        <div class="img">
+        <!-- <div class="img">
         <a href="#" >
 					<img src="img/logo.png" width="150px" alt="logo-bikcraft">
 				</a>
-        </div>
+        </div> -->
 			</div>
 </header>

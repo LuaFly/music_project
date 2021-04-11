@@ -9,20 +9,9 @@
 
   <title>Document</title>
   <style>
-  body{
-    background: #EAFBFE;
-  }
-    .box {
-      margin-top:3rem;
-      background: #FCFFFF;
-      overflow-y: auto;
-      overflow-x: hidden;
-      border-radius:10px;
-      box-shadow: 4px 3px 13px 1px rgba(47,105,222,0.56);
-      -webkit-box-shadow: 4px 3px 13px 1px rgba(47,105,222,0.56);
-      -moz-box-shadow: 4px 3px 13px 1px rgba(47,105,222,0.56);
-    }
-        
+    body {
+        background: #eafbf4;
+    }    
   </style>
 </head>
 <body>
@@ -32,7 +21,7 @@
         @include('components/menu')
       </div>
     </div>
-    <div class="d-flex justify-content-end">
+    <div class="col-12">
       <div class="col-5">
         @include('components/carrousel')
       </div>
