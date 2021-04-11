@@ -2,6 +2,9 @@
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
+.mySlides img {
+  max-height: 500px;
+}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -70,33 +73,31 @@ img {vertical-align: middle;}
 }
 </style>
 <div class="row">
-    <div class="col-12">
-      <div class="col-5>">
-        <h1> Teste </h1>
-      </div>
-      <div class="col-5 slideshow-container">
-      <div class="mySlides fade">
+  <h1 class="col-4">Teste</h1>
+  <div class="col-8 slideshow-container">
+    <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-          <img src="img/alexander-shatov-niUkImZcSP8-unsplash.jpg" style="width:100%">
-          <div class="text">TEste</div>
-        </div>
-        <div class="mySlides fade">
+        <img src="img/alexander-shatov-niUkImZcSP8-unsplash.jpg" style="width:100%">
+        <div class="text">TEste</div>
+      </div>
+      <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-          <img src="img/eric-nopanen-8e0EHPUx3Mo-unsplash.jpg" style="width:100%">
-          <div class="text">Teste</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/clark-tibbs-oqStl2L5oxI-unsplash.jpg" style="width:100%">
-          <div class="text">Teste</div>
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-     </div>
+        <img src="img/eric-nopanen-8e0EHPUx3Mo-unsplash.jpg" style="width:100%">
+        <div class="text">Teste</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/clark-tibbs-oqStl2L5oxI-unsplash.jpg" style="width:100%">
+        <div class="text">Teste</div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </div>
+  </div>
 </div>
 <script>
 var slideIndex = 0;
