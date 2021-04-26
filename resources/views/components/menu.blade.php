@@ -39,13 +39,13 @@
         
 					<ul>
 						<li>
-							<a href="#" class="menu_ativo"> Home</a>
+							<a href="/" > Home</a>
 						</li>
 						<li>
 							<a href="#"> Map</a>
 						</li>
 						<li>
-							<a href="#"> About us</a>
+							<a href="/aboutus"> About us</a>
 						</li>
 						<li>
 							<a href="#"> <span class="signin"> Sign in <span></a>
