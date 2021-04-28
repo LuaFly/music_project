@@ -8,12 +8,28 @@
 
   <style type="text/css">
     body {
-      background: #ccc;
+      background: #eafbf4;
+      width: 90%;
+      height: 90%;
+    }
+
+    #particles-container {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      margin-top: -50px;
     }
 
     #magazine {
-      width: 1152px;
-      height: 752px;
+      width: 90vw;
+      height: 75vh;
+    }
+
+    img {
+      height: 60vh;
+      max-width: 500px;
+      object-fit: fill;
+      margin-top: 3rem;
     }
 
     #magazine .turn-page {
@@ -24,17 +40,27 @@
 </head>
 
 <body>
-  <div class="light-blue col-11 ">
-    @include('components/menu')
-  </div>
+  <div id="particles-container"></div>
+  <div class="box container">
+    <div class="d-flex justify-content-end">
+      <div class="light-blue col-11 ">
+        @include('components/menu')
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
 
-  <div id="magazine">
-    <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
-    <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
-    <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
-    <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
+          <div id="magazine">
+            <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
+            <div> <img src="https://zenitemarcas.com.br/wp-content/uploads/2018/05/como-registrar-uma-m%C3%BAsica.jpg" /> </div>
+            <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
+            <div> <img src="https://i.pinimg.com/originals/a8/54/14/a85414f02f824b3e28b52fa7fffdd01b.jpg" /> </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 
   <script type="text/javascript">
     $(window).ready(function() {
